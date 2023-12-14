@@ -26,6 +26,9 @@ jobs:
         with:
           java-version: "12.x"
 
+      - name: Upgrade Flutter
+        run: flutter upgrade
+        
       - name: Clean Code
         run: flutter clean
       
