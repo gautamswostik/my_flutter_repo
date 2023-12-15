@@ -11,15 +11,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Clone flutter repo
-        uses: subosito/flutter-action@v1
+        uses: subosito/flutter-action@v2
         with:
-          flutter-version:  "3.0.0"
+          flutter-version:  "3.7.7"
           channel: "stable"
 
       - run: flutter --version
       
       - name: Chekout Code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Get Java
         uses: actions/setup-java@v1
